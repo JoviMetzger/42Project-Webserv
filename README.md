@@ -8,8 +8,7 @@ allowing browsers to communicate with servers to fetch and display web pages. <b
 This project is made in collabaration with 🫖 [Adri Rommers](https://github.com/arommers) and [Sven van Hasselt](https://github.com/svenvanhasselt) 🫖
 <br> <br>
 
-[Video](https://github.com/user-attachments/assets/0704e46d-c065-41a0-9bfe-815065c3c738)
-
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv![Video]()
 
 
 ## 🐉Table of Contents
@@ -685,7 +684,7 @@ location /img {
 
 <img src="https://github.com/user-attachments/assets/c43d1d6d-c2d7-4486-91b5-1cc61e7f4a12" alt="Images_examples" width="250">
 
-<br> <br>
+<br>
 
 <details>
   <summary><strong>How Location Block Works</strong></summary>
