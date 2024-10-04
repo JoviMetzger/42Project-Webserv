@@ -153,8 +153,6 @@ that can be queued up before the server starts rejecting them. <br>
 
 </details>
 
----
-
 <details>
   <summary><strong>Step 4: Accept Incoming Connection</strong></summary>
 
