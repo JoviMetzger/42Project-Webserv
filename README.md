@@ -682,7 +682,7 @@ location /img {
 }
 ```
 
-<img src="https://github.com/user-attachments/assets/c43d1d6d-c2d7-4486-91b5-1cc61e7f4a12" alt="Images_examples" width="300">
+<img src="https://github.com/user-attachments/assets/c43d1d6d-c2d7-4486-91b5-1cc61e7f4a12" alt="Images_examples" width="250">
 
 <br> <br>
 
@@ -772,7 +772,7 @@ $ ./webserv <configuration file your choice>
 ```
 3. The program is now running. Go to your web browser:
 
-<img src="https://github.com/user-attachments/assets/80b7ff38-5fa4-43b3-986d-9523e5136810" alt="Image_browser" width="350">
+<img src="https://github.com/user-attachments/assets/80b7ff38-5fa4-43b3-986d-9523e5136810" alt="Image_browser" width="400">
  <br><br>
 
 
