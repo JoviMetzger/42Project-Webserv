@@ -40,24 +40,24 @@ The server then processes the request and sends back an HTTP response. <br>
 
 ```script
 
-                                           HTTP Message can be either 
-                                             a request or response.
-                                                /             \
-                                               /               \
-                                              /                 \
-----------------------------------------------                   -----------------------------------------------
+                                        HTTP Message can be either 
+                                          a request or response.
+                                             /             \
+                                            /               \
+                                           /                 \
+-------------------------------------------                   ------------------------------------------
 
-	HTTP request:								HTTP response:
-	consists of a 								consists of a
-	- request line 🟥,					        	- status line 🔴,
-	- headers 🟨,								- headers 🟡,
-	- optional message body 🟩.						- optional message body 🟢.
-Example:								Example:
-GET /index.html HTTP/1.1						HTTP/1.1 200 OK
-Host: localhost:8080							Content-Type: text/html
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)			Content-Length: 1234
-									<Message Body>
-----------------------------------------------------------------------------------------------------------------
+	HTTP request:							HTTP response:
+	consists of a 							consists of a
+	- request line 🟥,				        	- status line 🔴,
+	- headers 🟨,							- headers 🟡,
+	- optional message body 🟩.					- optional message body 🟢.
+Example:							Example:
+GET /index.html HTTP/1.1					HTTP/1.1 200 OK
+Host: localhost:8080						Content-Type: text/html
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)		Content-Length: 1234
+								<Message Body>
+--------------------------------------------------------------------------------------------------------
 
 ```
 ### 🗿 HTTP Request States:
@@ -228,27 +228,27 @@ such as the method, path, headers, and message body *(if present)*. <br>
 If any syntax error was found in the request during parsing, error flags are set and parsing stops.<br> <br>
 ```script
 
-				         	         HTTP request:
-		    ---------------------|-------------------------------------------|---------------------
+                                                    HTTP request:
+		    -------------------|-------------------------------------|---------------------
 
 	
-🟥 Request line:			    🟨 Headers:			        	🟩 Optional message body:		
-consists of				    contain additional 				- GET method usually doesn't
-- the method, 				    information about the request		  include any body, most servers
-- the path, 				    - the hostname of the server, 		  respond with information
-- the HTTP version.			    - the type of browser being used.		  from the URI/URL requested.
-------------------------------------------|-------------------------------------------|--------------------------------------	
+🟥 Request line:			   🟨 Headers:			           🟩 Optional message body:		
+consists of				   contain additional 			   - GET method usually doesn't
+- the method, 				   information about the request	     include any body, most servers
+- the path, 				   - the hostname of the server, 	     respond with information
+- the HTTP version.			   - the type of browser being used.	     from the URI/URL requested.
+----------------------------------------|-------------------------------------|-------------------------------------	
 `The method` specifies the action
 that the client wants to perform,
 such as GET (to retrieve a resource) 
 or POST (to submit data to the server)
-------------------------------------------|-------------------------------------------|--------------------------------------
+----------------------------------------|-------------------------------------|-------------------------------------
 `The path` or URI specifies the location 
 of the resource on the server.
-------------------------------------------|-------------------------------------------|--------------------------------------
+----------------------------------------|-------------------------------------|-------------------------------------
 `The HTTP version` indicates the version
 of the HTTP protocol being used.
-------------------------------------------|-------------------------------------------|--------------------------------------
+----------------------------------------|-------------------------------------|-------------------------------------
 
 ```
 <br>
@@ -263,16 +263,16 @@ adding headers to the response to provide additional information about the conte
 and formatting the message body according to the content type and encoding of the response. <br> <br>
 ```script
 
-							 HTTP response:
-	            ----------------------|---------------------------------------------|----------------------
+                                                      HTTP response:
+	            -------------------|-----------------------------------------|----------------------
 
 
-🔴 Status line:				     🟡 Headers:			         🟢 Optional message body:
-consists of				     contain additional 			 - The message body contains the actual	
-- the HTTP version, 			     information about the response		   content of the response,
-- the status code, 			     - the type and size			   such as the HTML code for a webpage.
+🔴 Status line:				     🟡 Headers:			     🟢 Optional message body:
+consists of				     contain additional 		     - The message body contains the actual	
+- the HTTP version, 			     information about the response	       content of the response,
+- the status code, 			     - the type and size		       such as the HTML code for a webpage.
 					       of the content being returned.
--------------------------------------------|---------------------------------------------|------------------------------------------				 	
+----------------------------------------|-----------------------------------------|------------------------------------------				 	
 The status code indicates 
 the result of the request,
 such as 200 OK (successful) 
@@ -287,7 +287,7 @@ Successful responses (200 – 299)
 Redirection messages (300 – 399)
 Client error responses (400 – 499)
 Server error responses (500 – 599)
--------------------------------------------|---------------------------------------------|------------------------------------------
+----------------------------------------|-----------------------------------------|------------------------------------------
 
 ```
 <br>
@@ -343,7 +343,8 @@ Typically, the server is configured to treat files in a specific directory *(e.g
 as executable scripts rather than static files. <br> <br>
 
 **1. Sets Up Environment Variables:** <br>
-- The server prepares several environment variables like `QUERY_STRING`, `REQUEST_METHOD`, `CONTENT_LENGTH`, etc., <br>
+- The server prepares several environment variables like `QUERY_STRING`, <br>
+`REQUEST_METHOD`, `CONTENT_LENGTH`, etc., <br>
 which provide information to the CGI script about the request. <br>
 
 **2. Executes the Script:** <br>
@@ -681,7 +682,7 @@ location /img {
 }
 ```
 
-<img src="https://github.com/user-attachments/assets/c43d1d6d-c2d7-4486-91b5-1cc61e7f4a12" alt="Images_examples" width="500">
+<img src="https://github.com/user-attachments/assets/c43d1d6d-c2d7-4486-91b5-1cc61e7f4a12" alt="Images_examples" width="400">
 
 <br> <br>
 
@@ -771,7 +772,7 @@ $ ./webserv <configuration file your choice>
 ```
 3. The program is now running. Go to your web browser:
 
-<img src="https://github.com/user-attachments/assets/80b7ff38-5fa4-43b3-986d-9523e5136810" alt="Image_browser" width="100">
+<img src="https://github.com/user-attachments/assets/80b7ff38-5fa4-43b3-986d-9523e5136810" alt="Image_browser" width="250">
  <br><br>
 
 
