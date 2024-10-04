@@ -268,11 +268,11 @@ and formatting the message body according to the content type and encoding of th
 
 
 🔴 Status line:				     🟡 Headers:			     🟢 Optional message body:
-consists of				     contain additional 		     - The message body contains the actual	
+consists of				     contain additional 		     - The message body contains the actual
 - the HTTP version, 			     information about the response	       content of the response,
 - the status code, 			     - the type and size		       such as the HTML code for a webpage.
 					       of the content being returned.
-----------------------------------------|-----------------------------------------|------------------------------------------				 	
+----------------------------------------|-----------------------------------------|------------------------------------------
 The status code indicates 
 the result of the request,
 such as 200 OK (successful) 
@@ -682,7 +682,7 @@ location /img {
 }
 ```
 
-<img src="https://github.com/user-attachments/assets/c43d1d6d-c2d7-4486-91b5-1cc61e7f4a12" alt="Images_examples" width="400">
+<img src="https://github.com/user-attachments/assets/c43d1d6d-c2d7-4486-91b5-1cc61e7f4a12" alt="Images_examples" width="300">
 
 <br> <br>
 
@@ -772,7 +772,7 @@ $ ./webserv <configuration file your choice>
 ```
 3. The program is now running. Go to your web browser:
 
-<img src="https://github.com/user-attachments/assets/80b7ff38-5fa4-43b3-986d-9523e5136810" alt="Image_browser" width="250">
+<img src="https://github.com/user-attachments/assets/80b7ff38-5fa4-43b3-986d-9523e5136810" alt="Image_browser" width="350">
  <br><br>
 
 
