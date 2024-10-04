@@ -264,7 +264,7 @@ and formatting the message body according to the content type and encoding of th
 ```script
 
 							 HTTP response:
-	        --------------------------|---------------------------------------------|--------------------------
+	            ----------------------|---------------------------------------------|----------------------
 
 
 🔴 Status line:				     🟡 Headers:			         🟢 Optional message body:
