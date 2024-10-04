@@ -11,10 +11,6 @@ This project is made in collabaration with 🫖 [Adri Rommers](https://github.co
 [Video](https://github.com/user-attachments/assets/0704e46d-c065-41a0-9bfe-815065c3c738)
 
 
-![Screencast from 30-09-24 15-57-13](https://github.com/user-attachments/assets/4884b454-0740-4737-80d1-bf3fe075fe95)
-
-
-
 
 ## 🐉Table of Contents
 
