@@ -418,8 +418,6 @@ server {
 
 </details>
 
----
-
 <details>
   <summary><strong>Test Server blocks:</strong></summary>
 
