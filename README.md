@@ -9,6 +9,9 @@ This project is made in collabaration with 🫖 [Adri Rommers](https://github.co
 <br> <br>
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv![Video]()
+![Video](https://github.com/user-attachments/assets/096b23b0-e363-460f-9536-660ac3bc37c4)
+
+![Video](https://github.com/user-attachments/assets/f379bf63-4969-4a64-b1bb-761cadce3d76)
 
 
 ## 🐉Table of Contents
