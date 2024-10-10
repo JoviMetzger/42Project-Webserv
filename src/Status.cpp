@@ -23,14 +23,14 @@ const std::unordered_map<std::string, std::string> Status::_contentTypes = {
 {".html",   "text/html"},
 {".css",    "text/css"},
 {".js",	    "application/javascript"},
-{".json",	"application/json"},
-{".png",	"image/png"},
-{".jpg", 	"image/jpeg"},
+{".json",   "application/json"},
+{".png",    "image/png"},
+{".jpg",    "image/jpeg"},
 {".jpeg",   "image/jpeg"},
-{".gif",	"image/gif"},
-{".txt",	"text/plain"},
-{".pdf",	"application/pdf"},
-{".zip",	"application/zip"},
+{".gif",    "image/gif"},
+{".txt",    "text/plain"},
+{".pdf",    "application/pdf"},
+{".zip",    "application/zip"},
 {".svg",    "image/svg+xml"}
 };
 
