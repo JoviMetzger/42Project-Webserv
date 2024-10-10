@@ -7,8 +7,7 @@ Client::Client(int fd, ServerBlock& ServerBlock) : _ServerBlock(ServerBlock)
 
 Client::~Client() {}
 
-// Utils
-
+// --- Utils ---
 void	Client::readNextChunk()
 {
 	char buffer[BUFFER_SIZE];
