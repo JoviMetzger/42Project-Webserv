@@ -7,8 +7,6 @@ Cgi::Cgi() {}
 Cgi::~Cgi() {}
 
 // --- CGI Functions ---
-
-
 void	Cgi::runCGI( Server& server, Client& client)
 {
 	int status = 0;
