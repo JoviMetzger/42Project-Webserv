@@ -14,11 +14,11 @@ int ServerBlock::getPathType(std::string const path)
 	int			result;
 
 	result = stat(path.c_str(), &buffer);
-	if (result == 0) // stat returns 0 on success and -1 on failure
+	if (result == 0) 				// stat returns 0 on success and -1 on failure
 	{
-		if (buffer.st_mode & S_IFREG) // 'S_IFREG' is a macro that checks if the file is a regular file
+		if (buffer.st_mode & S_IFREG) 		// 'S_IFREG' is a macro that checks if the file is a regular file
 			return (FILE);
-		else if (buffer.st_mode & S_IFDIR) // 'S_IFDIR' is a macro that checks if the file is a directory
+		else if (buffer.st_mode & S_IFDIR) 	// 'S_IFDIR' is a macro that checks if the file is a directory
 			return (FOLDER);
 		else
 			return (SOMETHING_ELSE);
@@ -122,9 +122,9 @@ void ServerBlock::ft_checkLocationIndex(const std::string &newIndex, Location lo
 std::vector<std::string> ServerBlock::ft_checkLocationMethods(const std::string &newMethods)
 {
 	// Split the input string by whitespace
-	std::istringstream	iss(newMethods);
+	std::istringstream		iss(newMethods);
 	std::vector<std::string>	methods;
-	std::string	word;
+	std::string			word;
 	bool		oneDELETE	= false;
 	bool		oneGET		= false;
 	bool 		onePOST		= false;
@@ -157,7 +157,7 @@ bool	ServerBlock::ft_checkLoactionAutoindex(const std::string &newAutoindex, std
 {
 	/* '/cgi-bin' should not have autoindex ON
 	 * - Security Risks: would expose these scripts to users, potentially revealing sensitive information or 
-	 *					 leading to security vulnerabilities. */
+	 *		     leading to security vulnerabilities. */
 	if (path == "/cgi-bin")
 		throw Exception_ServerBlock("Invalid Location_Block Autoindex: Parameter autoindex not allow for cgi-bin");
 	if (newAutoindex == "on")
