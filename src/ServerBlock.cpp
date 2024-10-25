@@ -63,7 +63,7 @@ void ServerBlock::setErrorPage(const std::string &newErrorPage)
 	// Convert the substring to an integer (error code)
 	int errorCode = std::stoi(errorCodeStr);
 
-    // Insert the string and the corresponding error code into the map
+    	// Insert the string and the corresponding error code into the map
 	_mapErrorPage[errorCode] = newErrorPage;
 }
 
