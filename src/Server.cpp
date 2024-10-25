@@ -78,11 +78,11 @@ void	Server::createPollLoop()
 		{
 			if (_pollFds[i].revents & POLLIN)
 			{
-				if (i < _servers.size())					// Server socket
+				if (i < _servers.size())			// Server socket
 					acceptConnection(_pollFds[i].fd);
 				else if (_clients.count(_pollFds[i].fd))	// Client socket
-					handleClientData(i);				
-				else										// Other file descriptors
+					handleClientData(i);			
+				else						// Other file descriptors
 					handleFileRead(i);
 			}
 			else if (_pollFds[i].revents & POLLOUT){
