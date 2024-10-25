@@ -20,8 +20,8 @@ class Cgi
 		pid_t		_pid;
 		std::string	_path;
 		TimePoint	_lastActivity;
-		int			_responsePipe[2];
-		int			_requestPipe[2];
+		int		_responsePipe[2];
+		int		_requestPipe[2];
 	public:
 		Cgi();
 		~Cgi();
