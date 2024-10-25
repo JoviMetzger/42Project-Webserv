@@ -6,7 +6,7 @@ Config::Config(std::string file_name) : _server_i(0), _info(0), _serverBlocks(0)
 	std::string file_content;
 
 	file_content = readConfigFile(file_name);	// read config file
-	splitServers(file_content);					// Split the Servers (to have each server block)
+	splitServers(file_content);			// Split the Servers (to have each server block)
 
 	std::set<int> ports; // Set to track the ports
 
