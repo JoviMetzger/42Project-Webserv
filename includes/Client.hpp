@@ -16,13 +16,13 @@
 
 enum    clientState
 {
-    PARSE = 0, // Parsing the request
-    START = 1, // Parsing has finished
-    READING = 2, // Reading from file/pipe
-    WRITING = 3, // Writing to file or pipe
-    ERROR = 4, // Some error occured
-    READY = 5, // Reading/Writing is finished and the process can continue
-    RESPONSE = 6, // Everything has been done and the reponse can be build
+   	 PARSE = 0, 	// Parsing the request
+    	START = 1,	// Parsing has finished
+    	READING = 2, 	// Reading from file/pipe
+    	WRITING = 3, 	// Writing to file or pipe
+   	ERROR = 4, 	// Some error occured
+    	READY = 5, 	// Reading/Writing is finished and the process can continue
+    	RESPONSE = 6,	// Everything has been done and the reponse can be build
 	SENDING = 7
 };
 
@@ -37,33 +37,33 @@ enum    clientState
 class Client : public Cgi , public Parsing , public Status
 {
 	private:
-		int										_fd;
-		int										_state = PARSE;
-		int										_readWriteFd = -1;
-		int										_statusCode = 0;
-		ServerBlock&							_ServerBlock;
+		int			_fd;
+		int			_state = PARSE;
+		int			_readWriteFd = -1;
+		int			_statusCode = 0;
+		ServerBlock&		_ServerBlock;
 
 	public:
 		Client(int fd, ServerBlock& ServerBlock);
 		~Client();
 
 		// Utils
-		void									readNextChunk();
-		void									writeNextChunk();
-		void									resetClientData( void );
+		void		readNextChunk();
+		void		writeNextChunk();
+		void		resetClientData( void );
 
 		// Getters
-		int										getFd();
-		int										getState();
-		int										getReadWriteFd();
-		int										getStatusCode();
-		ServerBlock&							getServerBlock();
+		int		getFd();
+		int		getState();
+		int		getReadWriteFd();
+		int		getStatusCode();
+		ServerBlock&	getServerBlock();
 
 		// Setters
-		void									setFd( int fd );
-		void									setState ( const int state );
-		void									setReadWriteFd(int fd);
-		void									setStatusCode( const int statusCode );
+		void		setFd( int fd );
+		void		setState ( const int state );
+		void		setReadWriteFd(int fd);
+		void		setStatusCode( const int statusCode );
 };
 
 std::string	trimWhiteSpace(std::string& string);
