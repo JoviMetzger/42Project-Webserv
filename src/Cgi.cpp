@@ -24,9 +24,10 @@ void	Cgi::runCGI( Server& server, Client& client)
 		}
 		else
 			client.setState(READY);
+		
 		createPipe(client, client.getResponsePipe());
 		if (client.getState() == ERROR)
-				return ;
+			return ;
 		createFork(client);
 	}
 	else if (client.getState() == READY){
