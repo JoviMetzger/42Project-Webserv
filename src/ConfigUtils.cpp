@@ -134,7 +134,7 @@ bool	Config::ft_checkBrackets(std::string &str)
 	int stack[100];		// Stack to store open brackets
 	int top = -1;		// Initialize stack top to -1
 	int openBracket;	// Variable to store the type of open bracket
-	int i = 0;			// Loop counter to traverse the input string
+	int i = 0;		// Loop counter to traverse the input string
 
 	while (str[i] != '\0') 
 	{
@@ -351,7 +351,7 @@ bool Config::location(std::string string)
 	std::vector<std::string> words;
 	std::string word;
 
-	while (iss >> word)			// Split the input string into words
+	while (iss >> word)		// Split the input string into words
 		words.push_back(word);
 	if (words.size() != 3)		// Check if there are exactly 3 words
 		return (false);
