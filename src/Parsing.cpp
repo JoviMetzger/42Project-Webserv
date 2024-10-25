@@ -3,7 +3,6 @@
 
 
 Parsing::Parsing(){};
-
 Parsing::~Parsing(){};
 
 void	Parsing::parseBuffer ( void )
@@ -86,9 +85,9 @@ void	Parsing::createResponse(Client &client)
 	
 	if (statusCode == 0)
 		client.setStatusCode(200);
-	if (statusCode == 301 || statusCode == 302) // Handle redirect responses
+	if (statusCode == 301 || statusCode == 302) 	// Handle redirect responses
 		buildRedirectReponse(client);
-	else // Handle regular responses
+	else 						// Handle regular responses
 		buildResponse(client);
 	client.setState(SENDING);
 }
@@ -157,7 +156,6 @@ void	Parsing::checkIfChunked( void )
 
 
 // Getters
-
 std::unordered_map<std::string, std::string>&	Parsing::getResponseMap()
 {
 	return (_responseMap);
@@ -189,7 +187,6 @@ bool	Parsing::getChunked()
 }
 
 // Setters
-
 void	Parsing::setWriteBuffer( std::string buffer )
 {
 	_writeBuffer = buffer;
