@@ -48,16 +48,16 @@ The server then processes the request and sends back an HTTP response. <br>
                                            /                 \
 -------------------------------------------                   ------------------------------------------
 
-	HTTP request:							HTTP response:
-	consists of a 							consists of a
-	- request line 🟥,				        	- status line 🔴,
-	- headers 🟨,							- headers 🟡,
-	- optional message body 🟩.					- optional message body 🟢.
-Example:							Example:
-GET /index.html HTTP/1.1					HTTP/1.1 200 OK
-Host: localhost:8080						Content-Type: text/html
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)		Content-Length: 1234
-								<Message Body>
+	HTTP request:													HTTP response:
+	consists of a 													consists of a
+	- request line 🟥,				        							- status line 🔴,
+	- headers 🟨,														- headers 🟡,
+	- optional message body 🟩.											- optional message body 🟢.
+Example:															Example:
+GET /index.html HTTP/1.1											HTTP/1.1 200 OK
+Host: localhost:8080												Content-Type: text/html
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)				Content-Length: 1234
+																	<Message Body>
 --------------------------------------------------------------------------------------------------------
 
 ```
