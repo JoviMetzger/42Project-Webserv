@@ -233,11 +233,11 @@ If any syntax error was found in the request during parsing, error flags are set
 		    -------------------|-------------------------------------|---------------------
 
 	
-🟥 Request line:			   🟨 Headers:			           🟩 Optional message body:		
-consists of				   contain additional 			   - GET method usually doesn't
-- the method, 				   information about the request	     include any body, most servers
-- the path, 				   - the hostname of the server, 	     respond with information
-- the HTTP version.			   - the type of browser being used.	     from the URI/URL requested.
+🟥 Request line:			  	   🟨 Headers:			           			🟩 Optional message body:		
+consists of				   		   contain additional 			   			- GET method usually doesn't
+- the method, 				   	   information about the request	     	include any body, most servers
+- the path, 				  	   - the hostname of the server, 	     	respond with information
+- the HTTP version.			   	   - the type of browser being used.	    from the URI/URL requested.
 ----------------------------------------|-------------------------------------|-------------------------------------	
 `The method` specifies the action
 that the client wants to perform,
@@ -268,11 +268,11 @@ and formatting the message body according to the content type and encoding of th
 	            -------------------|-----------------------------------------|----------------------
 
 
-🔴 Status line:				     🟡 Headers:			     🟢 Optional message body:
-consists of				     contain additional 		     - The message body contains the actual
-- the HTTP version, 			     information about the response	       content of the response,
-- the status code, 			     - the type and size		       such as the HTML code for a webpage.
-					       of the content being returned.
+🔴 Status line:				     		🟡 Headers:			     					🟢 Optional message body:
+consists of				    			contain additional 		     				- The message body contains the actual
+- the HTTP version, 			     	information about the response	       		content of the response,
+- the status code, 			     		- the type and size		       				such as the HTML code for a webpage.
+					      				of the content being returned.
 ----------------------------------------|-----------------------------------------|------------------------------------------
 The status code indicates 
 the result of the request,
@@ -380,12 +380,12 @@ and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.<br> <br>
 
 # --- All variables ---
 server {
-	server_name		=	W3bMasters			# Name of server
-	port 			=	8080				# Listen on port for incoming connections
-	host			=	127.0.0.1			# Server block will respond to requests for localhost (or (127.0.0.1))
-	root			=	/www/html			# Sets the root directory for this server block
-	max_client_size =	5000000					# File upload limit is 5MB -> 5000000
-	index			=	/index.html		 	# File to serve when a server running (Main web page)
+	server_name		=	W3bMasters						# Name of server
+	port 			=	8080							# Listen on port for incoming connections
+	host			=	127.0.0.1						# Server block will respond to requests for localhost (or (127.0.0.1))
+	root			=	/www/html						# Sets the root directory for this server block
+	max_client_size =	5000000							# File upload limit is 5MB -> 5000000
+	index			=	/index.html		 				# File to serve when a server running (Main web page)
 	error_page 400 	=	/config/error_page/400.html		# Files to serve when a error occurs
 	error_page 403 	=	/config/error_page/403.html 
 	error_page 404 	=	/config/error_page/404.html
@@ -404,7 +404,7 @@ server {
 	
 	# Handles requests to the root URL '/' -> second location block context
 	location / {
-		index 	= /index.html					# Specifies the default file to serve in this location
+		index 	= /index.html				# Specifies the default file to serve in this location
 		return	= 301 <URL>					# For redirecting this to a specific page <URL> can be any http-page (https://en.wikipedia.org/wiki/42_(number))
 	}
 
